@@ -5,14 +5,15 @@ import {
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from "./pages/home"
-// import Nav from "./components/NavBar";
+import NavBar from "./components/NavBar.jsx";
+
 
 function App() {
 
   return (
     <>
       <ApolloProvider >
-        {/* <Nav /> */}
+        <NavBar />
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
